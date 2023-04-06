@@ -1,0 +1,54 @@
+Script started on 2023-04-06 12:26:12-07:00 [TERM="st-256color" TTY="/dev/pts/3" COLUMNS="115" LINES="50"]
+[1m[7m%[27m[1m[0m                                                                                                                   ]2;nate@archCrafty:~/Documents/school/cs1c/hw11/src]1;..cs1c/hw11/src[0m[27m[24m[J[01;31m[01;32m[01;33m [36m  src[00m [K[?1h=[?2004hddate[?1l>[?2004l
+]2;date]1;dateThu Apr  6 12:26:13 PM PDT 2023
+[1m[7m%[27m[1m[0m                                                                                                                   ]2;nate@archCrafty:~/Documents/school/cs1c/hw11/src]1;..cs1c/hw11/src[0m[27m[24m[J[01;31m[01;32m[01;33m [36m  src[00m [K[?1h=[?2004hlls -l[?1l>[?2004l
+]2;ls --color=tty -l]1;lstotal 16
+-rw-r--r-- 1 nate nate 9199 Apr  6 12:24 hw11.cpp
+-rw-r--r-- 1 nate nate    0 Apr  6 12:26 hw11.scr
+-rw-r--r-- 1 nate nate  167 Apr  6 12:15 Makefile
+[1m[7m%[27m[1m[0m                                                                                                                   ]2;nate@archCrafty:~/Documents/school/cs1c/hw11/src]1;..cs1c/hw11/src[0m[27m[24m[J[01;31m[01;32m[01;33m [36m  src[00m [K[?1h=[?2004hmmake all[?1l>[?2004l
+]2;make all]1;makeg++ -std=c++14 -Wall hw11.cpp -o hw11.o
+[01m[Khw11.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Khw11.cpp:200:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KfcnPtr1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  200 |     string (*[01;35m[KfcnPtr1[m[K)(){ &foo };// [1.1] declare and init function pointer fcnPtr1 to point to function foo
+      |              [01;35m[K^~~~~~~[m[K
+[01m[Khw11.cpp:201:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KfcnPtr2[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  201 |     int (*[01;35m[KfcnPtr2[m[K)(int){ &hoo };// [1.2] declare and init function pointer fcnPtr2 to point to function hoo
+      |           [01;35m[K^~~~~~~[m[K
+[01m[Khw11.cpp:237:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbaseSlice[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  237 |     BaseSlice [01;35m[KbaseSlice[m[K = dSlice; // instantiate base class object and assign to derived class
+      |               [01;35m[K^~~~~~~~~[m[K
+[1m[7m%[27m[1m[0m                                                                                                                   ]2;nate@archCrafty:~/Documents/school/cs1c/hw11/src]1;..cs1c/hw11/src[0m[27m[24m[J[01;31m[01;32m[01;33m [36m  src[00m [K[?1h=[?2004hlls -l[?1l>[?2004l
+]2;ls --color=tty -l]1;lstotal 36
+-rw-r--r-- 1 nate nate  9199 Apr  6 12:24 hw11.cpp
+-rwxr-xr-x 1 nate nate 17984 Apr  6 12:26 [0m[01;32mhw11.o[0m
+-rw-r--r-- 1 nate nate     0 Apr  6 12:26 hw11.scr
+-rw-r--r-- 1 nate nate   167 Apr  6 12:15 Makefile
+[1m[7m%[27m[1m[0m                                                                                                                   ]2;nate@archCrafty:~/Documents/school/cs1c/hw11/src]1;..cs1c/hw11/src[0m[27m[24m[J[01;31m[01;32m[01;33m [36m  src[00m [K[?1h=[?2004hvvalgrind ./hw11.o[1m [0m[0m [?1l>[?2004l
+]2;valgrind ./hw11.o]1;valgrind==187963== Memcheck, a memory error detector
+==187963== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==187963== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==187963== Command: ./hw11.o
+==187963== 
+
+************************************** 
+*           Running HW11             * 
+*      Programmed by Nathan Milton   * 
+*      CS1C Tues/Thurs & 1:30pm      * 
+************************************** 
+
+9 8 7 6 5 4 3 2 1 
+1 2 3 4 5 6 7 8 9 
+9 7 5 3 1 8 6 4 2 
+==187963== 
+==187963== HEAP SUMMARY:
+==187963==     in use at exit: 0 bytes in 0 blocks
+==187963==   total heap usage: 2 allocs, 2 frees, 73,728 bytes allocated
+==187963== 
+==187963== All heap blocks were freed -- no leaks are possible
+==187963== 
+==187963== For lists of detected and suppressed errors, rerun with: -s
+==187963== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[1m[7m%[27m[1m[0m                                                                                                                   ]2;nate@archCrafty:~/Documents/school/cs1c/hw11/src]1;..cs1c/hw11/src[0m[27m[24m[J[01;31m[01;32m[01;33m [36m  src[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2023-04-06 12:26:47-07:00 [COMMAND_EXIT_CODE="0"]
